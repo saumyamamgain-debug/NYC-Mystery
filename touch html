@@ -1,0 +1,6 @@
+// In script.js
+document.getElementById('envelope-hotspot').addEventListener('click', () => {
+    console.log("Tapped the envelope!");
+    // Trigger the Spot the Difference puzzle
+    showPuzzle('spotTheDifference');
+});

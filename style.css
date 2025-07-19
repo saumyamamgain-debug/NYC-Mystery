@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    overflow: hidden; /* Prevent scrolling */
+    background-color: #333; /* Dark background */
+    font-family: Arial, sans-serif;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#game-container {
+    width: 100vw; /* Take full viewport width */
+    height: 100vh; /* Take full viewport height */
+    max-width: 800px; /* Optional: cap max width for larger screens */
+    max-height: 100vh;
+    position: relative;
+    background-color: #555; /* Placeholder game area */
+    overflow: hidden;
+}
+
+/* Styles for buttons, text, etc., will go here */
+
+/* Example Media Query for smaller screens */
+@media (max-width: 600px) {
+    /* Make buttons larger for easier tapping on phones */
+    .interactive-button {
+        padding: 20px;
+        font-size: 1.2em;
+    }
+}

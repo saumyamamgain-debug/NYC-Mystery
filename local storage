@@ -1,0 +1,15 @@
+// Saving progress
+function saveGame() {
+    localStorage.setItem('nycMysterySave', JSON.stringify(game));
+}
+
+// Loading progress
+function loadGame() {
+    const savedData = localStorage.getItem('nycMysterySave');
+    if (savedData) {
+        Object.assign(game, JSON.parse(savedData));
+        // Update UI based on loaded data
+        showScene(game.currentScene);
+    }
+}
+// Call loadGame() on startup
